@@ -17,7 +17,8 @@ int main(void)
     close(0);
     close(1);
     close(2);
-    setsid(); // terminal close, create new session and process groupwhile(1) {
+    setsid(); // terminal close, create new session and process group
+    while(1) {
     printf("c(% d)\n", i);
     i++;
     sleep(1);
